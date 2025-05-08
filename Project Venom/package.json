@@ -1,0 +1,15 @@
+{
+    "name": "venom-bot-whatsapp",
+    "version": "1.0.0",
+    "description": "Bot automático de resposta para WhatsApp usando Venom",
+    "main": "src/bot.js",
+    "scripts": {
+      "start": "node src/bot.js"
+    },
+    "author": "Seu Nome ou Empresa",
+    "license": "MIT",
+    "dependencies": {
+      "venom-bot": "^5.0.0"
+    }
+  }
+  
