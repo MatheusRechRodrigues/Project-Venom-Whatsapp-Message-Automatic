@@ -13,6 +13,9 @@ function start(client) {
     const id = message.from;
     const agora = Date.now();
 
+  
+
+
     const podeResponder =
       !message.isGroupMsg &&
       !message.fromMe &&
@@ -25,3 +28,4 @@ function start(client) {
     }
   });
 }
+

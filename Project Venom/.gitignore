@@ -1,4 +1,12 @@
+# Ignora dependências
 node_modules/
+
+# Ignora sessões do Venom
 tokens/
+session/
+whatsapp-bot-session/
+.whatsapp-bot-session/
+
+# Ignora logs
 logs/
 *.log
