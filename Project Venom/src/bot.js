@@ -3,7 +3,11 @@ const config = require('./config');
 
 const ultimosContatos = {};
 
-create({ session: 'whatsapp-bot' })
+create({
+  session: 'whatsapp-bot',
+  headless: false, // <- ISSO FAZ ABRIR O NAVEGADOR NORMAL
+  browserPath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' // caminho do Chrome (ajuste se for diferente)
+})
   .then((client) => start(client))
   .catch((erro) => console.log('Erro ao iniciar o bot:', erro));
 
@@ -12,9 +16,6 @@ function start(client) {
   client.onMessage(async (message) => {
     const id = message.from;
     const agora = Date.now();
-
-  
-
 
     const podeResponder =
       !message.isGroupMsg &&
@@ -28,4 +29,3 @@ function start(client) {
     }
   });
 }
-
